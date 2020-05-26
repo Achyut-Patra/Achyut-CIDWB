@@ -1,0 +1,295 @@
+@charset "utf-8";
+.responsive_table {
+    width: 100%;
+}
+table.dataTable {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+    clear: both;
+    color: #444444;
+    font-size: 1em;
+    margin: 0 auto;
+    width: 100%;
+}
+table.dataTable thead th {
+    background: #3C8DBC none repeat scroll 0 0;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 10px;
+    text-align: center;
+    text-transform: uppercase;
+	color:white;
+	border-right:rgba(255,255,255,0.2) 1px solid;
+}
+table.dataTable thead th.th_class {
+    background: #3C8DBC none repeat scroll 0 0;
+}
+table.dataTable thead th:last-child {
+    border-right: medium none;
+}
+table.dataTable tfoot th {
+    border-top: 1px solid black;
+    font-weight: bold;
+    padding: 3px 18px 3px 10px;
+}
+table.dataTable td {
+    border: 1px solid #ddd;
+    font-size: 0.9em;
+    padding: 5px 10px;
+}
+table.dataTable tr td:first-child {
+    border-left: medium none;
+    text-align: center;
+}
+table.dataTable tr td:last-child {
+    border-right: medium none;
+}
+table.dataTable tr:last-child td {
+    border-bottom: medium none;
+}
+table.dataTable td.center, table.dataTable td.dataTables_empty {
+    text-align: center;
+}
+table.dataTable tr.odd {
+    background-color: #fff;
+}
+table.dataTable tr.even {
+    background-color: #f7f7f7;
+}
+.dataTables_wrapper {
+    clear: both;
+    margin: 20px 0;
+    position: relative;
+}
+.dataTables_length {
+    float: left;
+    margin-bottom: 10px;
+}
+.dataTables_filter {
+    float: right;
+    margin-bottom: 10px;
+    text-align: right;
+}
+.dataTables_filter input {
+    padding: 3px 5px;
+}
+.dataTables_info {
+    clear: both;
+    float: left;
+    margin-top: 10px;
+}
+.dataTables_paginate {
+    float: right;
+    margin-top: 10px;
+    text-align: right;
+}
+.paginate_disabled_previous, .paginate_enabled_previous, .paginate_disabled_next, .paginate_enabled_next {
+    color: #111 !important;
+    cursor: pointer;
+    float: left;
+}
+.paginate_disabled_previous:hover, .paginate_enabled_previous:hover, .paginate_disabled_next:hover, .paginate_enabled_next:hover {
+    text-decoration: none !important;
+}
+.paginate_disabled_previous:active, .paginate_enabled_previous:active, .paginate_disabled_next:active, .paginate_enabled_next:active {
+    outline: medium none;
+}
+.paginate_disabled_previous, .paginate_disabled_next {
+    color: #666 !important;
+}
+.paginate_disabled_previous, .paginate_enabled_previous {
+    font-size: 0.9em;
+    padding: 5px 8px;
+}
+.paginate_disabled_next, .paginate_enabled_next {
+    font-size: 0.9em;
+    margin-left: 10px;
+    padding: 5px 8px;
+}
+.paginate_enabled_previous {
+    border: 1px solid #06c;
+    color: #06c !important;
+}
+.paginate_enabled_previous:hover {
+    background: #06c none repeat scroll 0 0;
+    color: #fff !important;
+}
+.paginate_disabled_previous {
+    border: 1px solid #ddd;
+    color: #999 !important;
+    cursor: auto;
+}
+.paginate_enabled_next {
+    border: 1px solid #06c;
+    color: #06c !important;
+}
+.paginate_enabled_next:hover {
+    background: #06c none repeat scroll 0 0;
+    color: #fff !important;
+}
+.paginate_disabled_next {
+    border: 1px solid #ddd;
+    color: #999 !important;
+    cursor: auto;
+}
+.paging_full_numbers {
+    height: 22px;
+    line-height: 22px;
+}
+.paging_full_numbers a:active {
+    outline: medium none;
+}
+.paging_full_numbers a:hover {
+    text-decoration: none;
+}
+.paging_full_numbers a.paginate_button, .paging_full_numbers a.paginate_active {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    color: #333 !important;
+    cursor: pointer;
+    margin: 0 3px;
+    padding: 2px 5px;
+}
+.paging_full_numbers a.paginate_button {
+    background-color: #ddd;
+}
+.paging_full_numbers a.paginate_button:hover {
+    background-color: #ccc;
+    text-decoration: none !important;
+}
+.paging_full_numbers a.paginate_active {
+    background-color: #99b3ff;
+}
+.dataTables_processing {
+    background-color: white;
+    border: 1px solid #ddd;
+    color: #999;
+    font-size: 14px;
+    height: 30px;
+
+    left: 50%;
+    margin-left: -125px;
+    margin-top: -15px;
+    padding: 14px 0 2px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 250px;
+}
+table.dataTable thead th:active, table.dataTable thead td:active {
+    outline: medium none;
+}
+.dataTables_scroll {
+    clear: both;
+}
+.dataTables_scrollBody {
+}
+@media only screen and (max-width: 800px) {
+.responsive thead tr {
+    display: none;
+    left: -9999px;
+    position: absolute;
+    top: -9999px;
+}
+.responsive tr {
+    border: 1px solid #ccc;
+}
+.responsive tbody td {
+    border: medium none;
+    color: #000;
+    padding-left: 50%;
+    position: relative;
+    text-align: left;
+}
+table.dataTable tr td:first-child {
+    text-align: left;
+}
+.responsive td::before {
+    border-right: 1px solid #ddd;
+    color: #ed5139 !important;
+    font-size: 0.9em;
+    left: 6px;
+    position: absolute;
+    top: 6px;
+    white-space: nowrap;
+    width: 45%;
+}
+.one td:nth-of-type(1)::before {
+    content: "Sl";
+}
+.one td:nth-of-type(2)::before {
+    content: "Name";
+}
+.one td:nth-of-type(3)::before {
+    content: "Designation";
+}
+.one td:nth-of-type(4)::before {
+    content: "Address";
+}
+.one td:nth-of-type(5)::before {
+    content: "Phone";
+}
+.one td:nth-of-type(6)::before {
+    content: "Email";
+}
+.two td:nth-of-type(1)::before {
+    content: "Sl";
+}
+.two td:nth-of-type(2)::before {
+    content: "Name";
+}
+.two td:nth-of-type(3)::before {
+    content: "Designation";
+}
+.two td:nth-of-type(4)::before {
+    content: "Posting";
+}
+.two td:nth-of-type(5)::before {
+    content: "Phone";
+}
+.two td:nth-of-type(6)::before {
+    content: "Email";
+}
+.three td:nth-of-type(1)::before {
+    content: "Sl";
+}
+.three td:nth-of-type(2)::before {
+    content: "State";
+}
+.three td:nth-of-type(3)::before {
+    content: "ICPS : Name of Officer";
+}
+.three td:nth-of-type(4)::before {
+    content: "ICPS : Designation";
+}
+.three td:nth-of-type(5)::before {
+    content: "ICPS : Contact";
+}
+.three td:nth-of-type(6)::before {
+    content: "ICPS : Email";
+}
+.three td:nth-of-type(7)::before {
+    content: "POLICE : Name of Officer";
+}
+.three td:nth-of-type(8)::before {
+    content: "POLICE : Designation";
+}
+.three td:nth-of-type(9)::before {
+    content: "POLICE : Contact";
+}
+.three td:nth-of-type(10)::before {
+    content: "POLICE : Email";
+}
+.four td:nth-of-type(1)::before {
+    content: "Sl. No";
+}
+.four td:nth-of-type(2)::before {
+    content: "CWC Name";
+}
+.four td:nth-of-type(3)::before {
+    content: "District";
+}
+.responsive table, .responsive thead, .responsive tbody, .responsive th, .responsive td, .responsive tr {
+    display: block;
+}
+}
